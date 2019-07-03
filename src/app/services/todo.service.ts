@@ -63,9 +63,6 @@ export class TodoService {
           case StatusResponse.ERROR:
             Swal.fire('Algo salio mal!', response.message, 'error');
             break;
-          case StatusResponse.NO_RECORDS_FOUND:
-            Swal.fire('Ops!!', 'No hay configuraciones registradas', 'info');
-            break;
         }
         return ret;
       }),
